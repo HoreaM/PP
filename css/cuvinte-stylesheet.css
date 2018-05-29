@@ -1,0 +1,51 @@
+.container {
+    position: absolute;
+    width: 70%;
+    height: 67%;
+    margin-top: 50px;
+    margin-left: 15%;
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.animalImage {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.animalTitle {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.animalContent {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    white-space: pre-wrap;
+}
+
+.menuRef {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 80%;
+    margin-top: 12%;
+}
+
+.startAgain {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    left: 80%;
+    margin-top: 22%;
+}

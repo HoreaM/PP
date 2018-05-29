@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZooApp - Rime Năzdrăvane</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/basic-stylesheet.css" rel="stylesheet">
+    <link href="css/rime-stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="backgroundImage"></div>
+
+<div id="logo-container">
+    <img class="logo" src="resources/images/zooapp.png">
+</div>
+
+<div id="video">
+
+    <br>
+    <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
+            onmouseover="PlaySound( 'inapoi') "
+            onmouseout="StopSound( 'inapoi') ">
+        <img class="imagine" src="resources/images/inapoi.png">
+        Înapoi La Meniu
+    </button>
+</div>
+
+<audio id='inapoi'
+       src='resources/audio/inapoi.wav'>
+</audio>
+
+<script src="js/audio-hover.js"></script>
+</body>
+</html>

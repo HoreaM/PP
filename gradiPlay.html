@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>ZooApp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/asculta-stylesheet.css">
+    <link rel="stylesheet" href="css/basic-stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="backgroundImage"></div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/zebra.jpg">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/elephant.jpg">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/panda.jpg">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/koala.jpg">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/monkey.jpg">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/turtle.jpg">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/lemur.png">
+</div>
+<div class="mySlides w3-display-container w3-center">
+    <img class="imaginiAnimale" src="resources/images/zooImages/hipo.jpg">
+</div>
+<div class="container">
+    <div class="progress" id="progress"></div>
+    <audio id="audio" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
+    <button class="togglePlay" onClick="togglePlay()">Play/Pause</button>
+    <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
+            onmouseover="PlaySound( 'inapoi') "
+            onmouseout="StopSound( 'inapoi') ">
+        <div class="continut-buton">
+            <img class="imagine" src="resources/images/inapoi.png">
+            Înapoi La Meniu
+        </div>
+    </button>
+
+</div>
+
+<audio id='inapoi'
+       src='resources/audio/inapoi.wav'>
+</audio>
+
+<script src="js/audio-hover.js"></script>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>
+
+<script type="text/javascript">
+    var timer;
+    var percent = 0;
+    var audio = document.getElementById("audio");
+
+    audio.addEventListener("playing", function (_event) {
+        var duration = _event.target.duration;
+        advance(duration, audio);
+    });
+
+    audio.addEventListener("pause", function (_event) {
+        clearTimeout(timer);
+    });
+
+    var advance = function (duration, element) {
+        var progress = document.getElementById("progress");
+        increment = 10 / duration
+        percent = Math.min(increment * element.currentTime * 10, 100);
+        progress.style.width = percent + '%'
+        startTimer(duration, element);
+    }
+
+    var startTimer = function (duration, element) {
+        if (percent < 100) {
+            timer = setTimeout(function () {
+                advance(duration, element)
+            }, 100);
+        }
+    }
+
+    function togglePlay(e) {
+        e = e || window.event;
+        var btn = e.target;
+
+        if (!audio.paused) {
+            btn.classList.remove('active');
+            audio.pause();
+            isPlaying = false;
+
+        } else {
+            btn.classList.add('active');
+            audio.play();
+            isPlaying = true;
+        }
+    }
+
+</script>
+
+
+</body>
+</html>

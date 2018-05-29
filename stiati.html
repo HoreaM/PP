@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZooApp - Știați că...?</title>
+    <link href="css/basic-stylesheet.css" rel="stylesheet">
+    <link href="css/stiati-stylesheet.css" rel="stylesheet">
+</head>
+
+<body class="w3-white">
+
+<div id="backgroundImage"></div>
+
+<div id="logo-container">
+    <img class="logo" src="resources/images/zooapp.png">
+</div>
+
+<button id="behind" onclick="carouselBehind()" class="navigateBehind">
+  <img class="arrowImg" src="resources/images/arrowBack.png">
+</button>
+<button id="ahead" onclick="carouselAhead()" class="navigateAhead">
+  <img class="arrowImg" src="resources/images/arrowNext.png">
+</button>
+<form action="menu.html" id="goToMenu">
+    <button type="submit" class="btn btn-default btn-lg login-button logInBtn menuRef">
+      <img class="menuImg" src="resources/images/menu.png">
+    </button>
+</form>
+<button id="startAgain" onclick="carouselAhead()" type="submit" class="btn btn-default btn-lg login-button logInBtn startAgain">
+  <img class="resetImg" src="resources/images/reset.png">
+</button>
+
+<div class="container">
+  <img class="animalImage" src="resources/images/zooImages/cow.jpg">
+  <h1 class="animalTitle">Văcuța</h1>
+  <p class="animalContent">
+        • Prietenoasă
+
+        • Dă lapte
+
+        • De dimensiune mare
+
+        • Trăiește pe toate continentele
+  </p>
+</div>
+<div class="container">
+  <img class="animalImage" src="resources/images/zooImages/zebra.jpg">
+  <h1 class="animalTitle">Zebra</h1>
+  <p class="animalContent">
+        • Sălbatică
+
+        • De dimensiune mare
+
+        • Trăiește în turme
+
+        • Trăiește în Africa
+  </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/elephant.jpg">
+    <h1 class="animalTitle">Elefantul</h1>
+    <p class="animalContent">
+        • Poate fi și prietenos,
+          dar și foarte periculos
+
+        • De dimensiune foarte mare
+
+        • Trăiește în turme
+
+        • Poate fi găsit în Africa și Asia
+    </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/panda.jpg">
+    <h1 class="animalTitle">Panda</h1>
+    <p class="animalContent">
+        • Prietenos
+
+        • De dimensiune medie
+
+        • Se hrănește cu bambus
+
+        • Trăiește în Asia
+    </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/koala.jpg">
+    <h1 class="animalTitle">Koala</h1>
+    <p class="animalContent">
+        • Nu este periculos
+
+        • De dimensiune mica
+
+        • Se hrănește cu eucalipt
+
+        • Trăiește în Australia
+    </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/monkey.jpg">
+    <h1 class="animalTitle">Maimuța</h1>
+    <p class="animalContent">
+        • Este ierbivoră
+
+        • De dimensiune mică sau medie
+
+        • Trăiește în Asia, Africa și
+          America de Sud
+
+        • Poate fi și prietenoasă, dar și periculoasă
+
+        • Poate fi foarte deșteaptă
+    </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/turtle.jpg">
+    <h1 class="animalTitle">Broasca Țestoasă</h1>
+    <p class="animalContent">
+        • Lentă și fricoasă,
+          dar nu este periculoasă
+
+        • De dimensiune mică sau medie
+
+        • Poate fi găsită pe toate continentele
+
+        • Este ierbivoră
+    </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/lemur.png">
+    <h1 class="animalTitle">Lemurul</h1>
+    <p class="animalContent">
+        • Poate fi și prietenos, dar și periculos,
+          când este pus în primejdie
+
+        • De dimensiune mică sau medie
+
+        • Trăiește în Madagascar, Africa
+
+        • Este ierbivor
+    </p>
+</div>
+<div class="container">
+    <img class="animalImage" src="resources/images/zooImages/hipo.jpg">
+    <h1 class="animalTitle">Hipopotamul</h1>
+    <p class="animalContent">
+        • Poate fi periculos
+
+        • De dimensiune mare
+
+        • Trăiește în Asia și Africa
+
+        • Este ierbivor
+
+        • Petrece foarte mult timp în apă
+    </p>
+</div>
+
+<script>
+    var myIndex = 0;
+    carouselAhead();
+
+    function carouselBehind() {
+      var i;
+      var x = document.getElementsByClassName("container");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      myIndex--;
+      if (myIndex == 0) {
+          myIndex = x.length - 1;
+      }
+
+      var behindButton = document.getElementById("behind");
+      var aheadButton = document.getElementById("ahead");
+      var goToMenuButton = document.getElementById("goToMenu");
+      var startAgainButton = document.getElementById("startAgain");
+
+      if (myIndex == 1) {
+        behindButton.style.display = "none";
+      } else {
+        behindButton.style.display = "block";
+      }
+
+      if (myIndex != x.length) {
+        aheadButton.style.display = "block";
+        goToMenuButton.style.display = "none";
+        startAgainButton.style.display = "none";
+      }
+
+      x[myIndex - 1].style.display = "block";
+    }
+
+    function carouselAhead() {
+        var i;
+        var x = document.getElementsByClassName("container");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+
+        var behindButton = document.getElementById("behind");
+        var aheadButton = document.getElementById("ahead");
+        var goToMenuButton = document.getElementById("goToMenu");
+        var startAgainButton = document.getElementById("startAgain");
+
+        if (myIndex == x.length) {
+          aheadButton.style.display = "none";
+          behindButton.style.display = "none";
+          goToMenuButton.style.display = "block";
+          startAgainButton.style.display = "block";
+        } else if (myIndex == 1) {
+          aheadButton.style.display = "block";
+          behindButton.style.display = "none";
+          goToMenuButton.style.display = "none";
+          startAgainButton.style.display = "none";
+        } else {
+          goToMenuButton.style.display = "none";
+          startAgainButton.style.display = "none";
+          aheadButton.style.display = "block";
+          behindButton.style.display = "block";
+        }
+
+        x[myIndex - 1].style.display = "block";
+    }
+</script>
+
+
+</body>
+</html>

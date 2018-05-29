@@ -1,0 +1,121 @@
+.container {
+    position: absolute;
+    width: 70%;
+    height: 55%;
+    margin-top: 50px;
+    margin-left: 15%;
+    background-color: #b0c8e9;
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.animalImage {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+}
+
+.animalTitle {
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 40px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.animalContent {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    white-space: pre-wrap;
+}
+
+.menuRef {
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    left: 87%;
+    margin-top: 8%;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #fbbbac;
+    border-width: 3px;
+    border-color: darkgray;
+}
+
+.startAgain {
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    left: 87%;
+    margin-top: 18%;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #fbbbac;
+    border-width: 3px;
+    border-color: darkgray;
+}
+
+.navigateBehind {
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  margin-left: 3%;
+  margin-top: 13%;
+  border-radius: 10px;
+  outline: 0;
+  background-color: #fbbbac;
+  border-width: 3px;
+  border-color: darkgray;
+}
+
+.navigateAhead {
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  margin-left: 87%;
+  margin-top: 13%;
+  border-radius: 10px;
+  outline: 0;
+  background-color: #fbbbac;
+  border-width: 3px;
+  border-color: darkgray;
+}
+
+.arrowImg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.menuImg {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.resetImg {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.navigateBehind:hover {
+  background-color: #efa292;
+}
+
+.navigateAhead:hover {
+  background-color: #efa292
+}
+
+.menuRef:hover {
+  background-color: #efa292;
+}
+
+.startAgain:hover {
+  background-color: #efa292;
+}
