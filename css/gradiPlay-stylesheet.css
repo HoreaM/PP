@@ -1,0 +1,19 @@
+.imgGradiPlay {
+    position: relative;
+    float: left;
+    width:  400px;
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.playButton {
+    width: 150px;
+    margin-top: 20%;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-radius: 10px;
+}
+
