@@ -1,8 +1,8 @@
 .container {
     position: absolute;
     width: 70%;
-    height: 55%;
-    margin-top: 50px;
+    height: 60%;
+    margin-top: 40px;
     margin-left: 15%;
     background-color: #b0c8e9;
     border-radius: 15px;
@@ -32,6 +32,19 @@
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     white-space: pre-wrap;
+}
+
+.soundContainer {
+  width: 100px;
+  margin-top: 36%;
+  margin-left: 150px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-width: 2px;
+  border-color: darkgray;
+  border-radius: 10px;
+  background-color: #fde9af;
+  outline: none;
 }
 
 .menuRef {
@@ -104,6 +117,12 @@
   height: 50px;
 }
 
+.playImage {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
 .navigateBehind:hover {
   background-color: #efa292;
 }
@@ -118,4 +137,8 @@
 
 .startAgain:hover {
   background-color: #efa292;
+}
+
+.soundContainer:hover {
+  background-color: #ead79a;
 }
