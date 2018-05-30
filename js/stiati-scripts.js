@@ -4,19 +4,25 @@ let audios = document.getElementsByClassName("audio");
 let playImgs = document.getElementsByClassName("playImage");
 
 let myIndex = 0;
-carouselAhead();
+
 
 for (i = 0; i < audios.length; i++) {
+    // console.log(audios[i]);
     audios[i].addEventListener("ended", toggleOnEnd);
 }
+
+carouselAhead();
 
 function toggleOnEnd() {
     playImgs[myIndex - 1].src = "resources/images/play.png";
 }
 
 function carouselBehind() {
+    audios[myIndex - 1].pause();
+    toggleOnEnd();
     let i;
     let x = document.getElementsByClassName("container");
+
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
@@ -48,6 +54,11 @@ function carouselBehind() {
 }
 
 function carouselAhead() {
+    if (myIndex !== 0) {
+        audios[myIndex - 1].pause();
+        toggleOnEnd();
+    }
+
     let i;
     let x = document.getElementsByClassName("container");
     for (i = 0; i < x.length; i++) {
