@@ -1,3 +1,50 @@
-#video {
+body {
     text-align: center;
+}
+
+.buton {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#rime-container {
+    text-align: center;
+    width: 45%;
+}
+
+.whitespace {
+    width: 43%;
+    height: 100px;
+}
+
+.placeholder {
+    width: 300px;
+    height: 190px;
+    /*background-color: black;*/
+    margin: 10px;
+}
+
+.imagine-rime {
+    border-radius: 25px;
+    /*border:1px solid black;*/
+    height: 190px;
+    margin: 6px;
+}
+
+.imagine-rime:hover {
+    -webkit-filter: brightness(120%);
+}
+
+.selected {
+    border:5px solid blue;
+}
+
+.done {
+    border:5px solid green;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.done:hover {
+    -webkit-filter: brightness(100%);
 }

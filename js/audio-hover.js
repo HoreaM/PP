@@ -1,5 +1,5 @@
 function PlaySound(soundobj) {
-    console.log("test");
+    // console.log("test");
     let thissound = document.getElementById(soundobj);
     thissound.play();
 }

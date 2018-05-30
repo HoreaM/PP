@@ -9,26 +9,141 @@
 </head>
 <body>
 
-<div id="logo-container">
-    <img class="logo" src="resources/images/zooapp.png">
+<!--<div id="logo-container">-->
+<!--<img class="logo" src="resources/images/zooapp.png">-->
+<!--</div>-->
+
+<div id="rime-container" class="container">
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="imagine-rime r1 stanga"
+                 onmouseover="PlaySound('crocodilul')"
+                 onmouseout="StopSound('crocodilul')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/st-crocodilul.png">
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <img class="imagine-rime r2 dreapta"
+                 onmouseover="PlaySound('ger')"
+                 onmouseout="StopSound('ger')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/dr-ger.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="imagine-rime r2 stanga"
+                 onmouseover="PlaySound('frigider')"
+                 onmouseout="StopSound('frigider')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/st-frigider.png">
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <img class="imagine-rime r1 dreapta"
+                 onmouseover="PlaySound('nilul')"
+                 onmouseout="StopSound('nilul')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/dr-nilul.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="imagine-rime r3 stanga"
+                 onmouseover="PlaySound('zoologia')"
+                 onmouseout="StopSound('zoologia')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/st-zoologia.png">
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <img class="imagine-rime r4 dreapta"
+                 onmouseover="PlaySound('gardul')"
+                 onmouseout="StopSound('gardul')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/dr-gardul.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <img class="imagine-rime r4 stanga"
+                 onmouseover="PlaySound('leopardul')"
+                 onmouseout="StopSound('leopardul')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/st-leopardul.png">
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <img class="imagine-rime r3 dreapta"
+                 onmouseover="PlaySound('galagia')"
+                 onmouseout="StopSound('galagia')"
+                 onClick="toggleSelected()"
+                 src="resources/images/rime/dr-galagia.png">
+        </div>
+    </div>
+
 </div>
 
-<div id="video">
+<div class="inapoi">
+    <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
+            onmouseover="PlaySound( 'inapoi') "
+            onmouseout="StopSound( 'inapoi') ">
+        <img class="imagine" src="resources/images/inapoi.png">
+        Înapoi La Meniu
+    </button>
+    <audio id='inapoi'
+           src='resources/audio/inapoi-la-meniu.mp4'>
+    </audio>
 
-    <br>
-    <div class="inapoi">
-        <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
-                onmouseover="PlaySound( 'inapoi') "
-                onmouseout="StopSound( 'inapoi') ">
-            <img class="imagine" src="resources/images/inapoi.png">
-            Înapoi La Meniu
-        </button>
-        <audio id='inapoi'
-               src='resources/audio/inapoi-la-meniu.mp4'>
-        </audio>
-    </div>
+    <button onclick="togglePlay()" type="button" class="btn btn-warning buton"
+            onmouseover="PlaySound('cum-se-joaca')"
+            onmouseout="StopSound('cum-se-joaca')">
+        <img class="imagine" src="resources/images/tutorial.png">
+        Cum se joacă?
+    </button>
+    <audio id='cum-se-joaca'
+           src='resources/audio/cum-se-joaca.mp4'>
+    </audio>
+    <audio id='cautati-rime'
+           src='resources/audio/cautati-rime.mp4'>
+    </audio>
+    <audio id='crocodilul'
+           src='resources/audio/rima-crocodilul.mp4'>
+    </audio>
+    <audio id='ger'
+           src='resources/audio/rima-ger.mp4'>
+    </audio>
+    <audio id='frigider'
+           src='resources/audio/rima-frigider.mp4'>
+    </audio>
+    <audio id='nilul'
+           src='resources/audio/rima-nilul.mp4'>
+    </audio>
+    <audio id='zoologia'
+           src='resources/audio/rima-zoologia.mp4'>
+    </audio>
+    <audio id='gardul'
+           src='resources/audio/rima-gardul.mp4'>
+    </audio>
+    <audio id='leopardul'
+           src='resources/audio/rima-leopardul.mp4'>
+    </audio>
+    <audio id='galagia'
+           src='resources/audio/rima-galagia.mp4'>
+    </audio>
+    <audio id='rima-corect'
+           src='resources/audio/rima-corect.mp4'>
+    </audio>
+    <audio id='rima-gresit'
+           src='resources/audio/rima-gresit.mp4'>
+    </audio>
+    <audio id='rima-castigat'
+           src='resources/audio/rima-castigat.mp4'>
+    </audio>
 </div>
 
 <script src="js/audio-hover.js"></script>
+<script src="js/rime-scripts.js"></script>
 </body>
 </html>
