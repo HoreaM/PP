@@ -4,49 +4,62 @@
     <title>ZooApp</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/asculta-stylesheet.css">
     <link rel="stylesheet" href="css/basic-stylesheet.css">
+    <link rel="stylesheet" href="css/gradiPlay-stylesheet.css">
+    <link rel="stylesheet" href="css/stiati-stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 
 <body>
 
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/zebra.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/tiger.png">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/elephant.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/giraffe.png">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/panda.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/leopard.png">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/koala.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/wolf.png">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/monkey.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/lion.jpg">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/turtle.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/snake.png">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/lemur.png">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/ostrich.jpg">
 </div>
-<div class="mySlides w3-display-container w3-center">
-    <img class="imaginiAnimale" src="resources/images/zooImages/hipo.jpg">
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/crocodile.png">
 </div>
-<div class="container">
-    <div class="progress" id="progress"></div>
-    <audio id="audio" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
-    <button class="togglePlay" onClick="togglePlay()">Play/Pause</button>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/elephant.jpg">
 </div>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/camel.png">
+</div>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/kangaroo.png">
+</div>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/sheep.png">
+</div>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/polarBear.png">
+</div>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/rhino.png">
+</div>
+<div class="mySlides ">
+    <img class="imgGradiPlay" src="resources/images/zooImages/dromader.png">
+</div>
+
 
 <div class="inapoi">
     <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
@@ -59,29 +72,26 @@
            src='resources/audio/inapoi-la-meniu.mp4'>
     </audio>
 </div>
-a
+
+
+<!--
+<div class="container" >
+    <div class="progress" id="progress"></div>
+    <audio id="audio" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
+    <button class="togglePlay" onClick="togglePlay()">Play/Pause</button>
+</div>
+-->
+
+<button class="soundContainer" onClick="togglePlay()">
+        <audio class="audio" src="resources/audio/hipo.mp4"></audio>
+        <img class="playImage" src="resources/images/play.png">
+    </button>
 
 <script src="js/audio-hover.js"></script>
+<script src="js/carousel-imagini.js"></script>
+<script src="js/stiati-scripts.js"></script>
 
-<script>
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-            myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
-</script>
-
+<!--
 <script type="text/javascript">
     var timer;
     var percent = 0;
@@ -129,7 +139,7 @@ a
     }
 
 </script>
-
+-->
 
 </body>
 </html>
