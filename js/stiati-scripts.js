@@ -35,7 +35,7 @@ function carouselBehind() {
 
     let behindButton = document.getElementById("behind");
     let aheadButton = document.getElementById("ahead");
-    let goToMenuButton = document.getElementById("goToMenu");
+    // let goToMenuButton = document.getElementById("goToMenu");
     let startAgainButton = document.getElementById("startAgain");
 
     if (myIndex === 1) {
@@ -46,7 +46,7 @@ function carouselBehind() {
 
     if (myIndex !== x.length) {
         aheadButton.style.display = "block";
-        goToMenuButton.style.display = "none";
+        // goToMenuButton.style.display = "none";
         startAgainButton.style.display = "none";
     }
 
@@ -73,21 +73,21 @@ function carouselAhead() {
 
     let behindButton = document.getElementById("behind");
     let aheadButton = document.getElementById("ahead");
-    let goToMenuButton = document.getElementById("goToMenu");
+    // let goToMenuButton = document.getElementById("goToMenu");
     let startAgainButton = document.getElementById("startAgain");
 
     if (myIndex === x.length) {
-        goToMenuButton.style.display = "block";
+        // goToMenuButton.style.display = "block";
         startAgainButton.style.display = "block";
         aheadButton.style.display = "none";
         behindButton.style.display = "block";
     } else if (myIndex === 1) {
-        goToMenuButton.style.display = "none";
+        // goToMenuButton.style.display = "none";
         startAgainButton.style.display = "none";
         aheadButton.style.display = "block";
         behindButton.style.display = "none";
     } else {
-        goToMenuButton.style.display = "none";
+        // goToMenuButton.style.display = "none";
         startAgainButton.style.display = "none";
         aheadButton.style.display = "block";
         behindButton.style.display = "block";

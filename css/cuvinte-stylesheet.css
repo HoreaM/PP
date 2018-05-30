@@ -1,12 +1,12 @@
 .container {
-    position: absolute;
+    /*position: absolute;*/
     width: 70%;
-    height: 67%;
-    margin-top: 50px;
+    height: 55%;
+    margin-top: 40px;
     margin-left: 15%;
-    background-color: lightgray;
-    border-radius: 10px;
-    overflow: scroll;
+    background-color: #b0c8e9;
+    border-radius: 15px;
+    /*overflow: scroll;*/
 }
 
 .animalImage {

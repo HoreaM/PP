@@ -45,9 +45,8 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 /*img {*/
-    /*height: 600px;*/
+/*height: 600px;*/
 /*}*/
-
 
 .align-elementTo-right {
 
@@ -121,7 +120,7 @@ body, h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
 }
 
-.imaginiAnimale{
+.imaginiAnimale {
     height: 600px;
 }
 
@@ -159,10 +158,10 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 /*.togglePlay:after {*/
-    /*width: 21px;*/
-    /*height: 26px;*/
-    /*margin-left: 0;*/
-    /*border-width: 0 7px;*/
-    /*border-color: rgba(255, 255, 255, 0.9);*/
+/*width: 21px;*/
+/*height: 26px;*/
+/*margin-left: 0;*/
+/*border-width: 0 7px;*/
+/*border-color: rgba(255, 255, 255, 0.9);*/
 /*}*/
 

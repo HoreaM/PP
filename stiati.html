@@ -3,13 +3,9 @@
 <head>
     <title>ZooApp - Știați că...?</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/basic-stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/stiati-stylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/stiati-stylesheet.css" rel="stylesheet">
 </head>
 
 <body class="w3-white">
@@ -26,11 +22,11 @@
 <button id="ahead" onclick="carouselAhead()" class="navigateAhead">
     <img class="arrowImg" src="resources/images/arrowNext.png">
 </button>
-<form action="menu.html" id="goToMenu">
-    <button type="submit" class="btn btn-default btn-lg login-button logInBtn menuRef">
-        <img class="menuImg" src="resources/images/menu.png">
-    </button>
-</form>
+<!--<form action="menu.html" id="goToMenu">-->
+<!--<button type="submit" class="btn btn-default btn-lg login-button logInBtn menuRef">-->
+<!--<img class="menuImg" src="resources/images/menu.png">-->
+<!--</button>-->
+<!--</form>-->
 <button id="startAgain" onclick="carouselAhead()" type="submit"
         class="btn btn-default btn-lg login-button logInBtn startAgain">
     <img class="resetImg" src="resources/images/reset.png">
@@ -198,7 +194,19 @@
     </button>
 </div>
 
-<script src="js/stiati-scripts.js"></script>
+<div class="inapoi">
+    <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
+            onmouseover="PlaySound( 'inapoi') "
+            onmouseout="StopSound( 'inapoi') ">
+        <img class="imagine" src="resources/images/inapoi.png">
+        Înapoi La Meniu
+    </button>
+    <audio id='inapoi'
+           src='resources/audio/inapoi-la-meniu.mp4'>
+    </audio>
+</div>
 
+<script src="js/stiati-scripts.js"></script>
+<script src="js/audio-hover.js"></script>
 </body>
 </html>

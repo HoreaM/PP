@@ -18,17 +18,18 @@
 <div id="video">
 
     <br>
-    <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
-            onmouseover="PlaySound( 'inapoi') "
-            onmouseout="StopSound( 'inapoi') ">
-        <img class="imagine" src="resources/images/inapoi.png">
-        Înapoi La Meniu
-    </button>
+    <div class="inapoi">
+        <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
+                onmouseover="PlaySound( 'inapoi') "
+                onmouseout="StopSound( 'inapoi') ">
+            <img class="imagine" src="resources/images/inapoi.png">
+            Înapoi La Meniu
+        </button>
+        <audio id='inapoi'
+               src='resources/audio/inapoi-la-meniu.mp4'>
+        </audio>
+    </div>
 </div>
-
-<audio id='inapoi'
-       src='resources/audio/inapoi.wav'>
-</audio>
 
 <script src="js/audio-hover.js"></script>
 </body>

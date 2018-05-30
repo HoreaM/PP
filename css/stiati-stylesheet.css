@@ -1,12 +1,12 @@
 .container {
-    position: absolute;
+    /*position: absolute;*/
     width: 70%;
-    height: 60%;
+    height: 55%;
     margin-top: 40px;
     margin-left: 15%;
     background-color: #b0c8e9;
     border-radius: 15px;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 .animalImage {
@@ -35,16 +35,17 @@
 }
 
 .soundContainer {
-  width: 100px;
-  margin-top: 36%;
-  margin-left: 150px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  border-width: 2px;
-  border-color: darkgray;
-  border-radius: 10px;
-  background-color: #fde9af;
-  outline: none;
+    width: 100px;
+    margin-top: 34%;
+    margin-bottom: 5px;
+    margin-left: 150px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-radius: 10px;
+    background-color: #fde9af;
+    outline: none;
 }
 
 .menuRef {
@@ -65,7 +66,7 @@
     width: 10%;
     height: 15%;
     left: 87%;
-    margin-top: 18%;
+    margin-top: 13%;
     border-radius: 10px;
     outline: 0;
     background-color: #fbbbac;
@@ -74,71 +75,71 @@
 }
 
 .navigateBehind {
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  margin-left: 3%;
-  margin-top: 13%;
-  border-radius: 10px;
-  outline: 0;
-  background-color: #fbbbac;
-  border-width: 3px;
-  border-color: darkgray;
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    margin-left: 3%;
+    margin-top: 13%;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #fbbbac;
+    border-width: 3px;
+    border-color: darkgray;
 }
 
 .navigateAhead {
-  position: absolute;
-  width: 10%;
-  height: 15%;
-  margin-left: 87%;
-  margin-top: 13%;
-  border-radius: 10px;
-  outline: 0;
-  background-color: #fbbbac;
-  border-width: 3px;
-  border-color: darkgray;
+    position: absolute;
+    width: 10%;
+    height: 15%;
+    margin-left: 87%;
+    margin-top: 13%;
+    border-radius: 10px;
+    outline: 0;
+    background-color: #fbbbac;
+    border-width: 3px;
+    border-color: darkgray;
 }
 
 .arrowImg {
-  position: relative;
-  width: 70px;
-  height: 70px;
+    position: relative;
+    width: 70px;
+    height: 70px;
 }
 
 .menuImg {
-  position: relative;
-  width: 70px;
-  height: 70px;
+    position: relative;
+    width: 70px;
+    height: 70px;
 }
 
 .resetImg {
-  position: relative;
-  width: 50px;
-  height: 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
 }
 
 .playImage {
-  position: relative;
-  width: 40px;
-  height: 40px;
+    position: relative;
+    width: 40px;
+    height: 40px;
 }
 
 .navigateBehind:hover {
-  background-color: #efa292;
+    background-color: #efa292;
 }
 
 .navigateAhead:hover {
-  background-color: #efa292
+    background-color: #efa292
 }
 
 .menuRef:hover {
-  background-color: #efa292;
+    background-color: #efa292;
 }
 
 .startAgain:hover {
-  background-color: #efa292;
+    background-color: #efa292;
 }
 
 .soundContainer:hover {
-  background-color: #ead79a;
+    background-color: #ead79a;
 }
