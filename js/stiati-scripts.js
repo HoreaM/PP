@@ -19,6 +19,7 @@ function toggleOnEnd() {
 
 function carouselBehind() {
     audios[myIndex - 1].pause();
+    audios[myIndex - 1].currentTime = 0;
     toggleOnEnd();
     let i;
     let x = document.getElementsByClassName("container");
@@ -32,6 +33,9 @@ function carouselBehind() {
     if (myIndex === 0) {
         myIndex = x.length - 1;
     }
+
+    audios[myIndex - 1].play();
+    playImgs[myIndex - 1].src = "resources/images/pause.png";
 
     let behindButton = document.getElementById("behind");
     let aheadButton = document.getElementById("ahead");
@@ -56,6 +60,7 @@ function carouselBehind() {
 function carouselAhead() {
     if (myIndex !== 0) {
         audios[myIndex - 1].pause();
+        audios[myIndex - 1].currentTime = 0;
         toggleOnEnd();
     }
 
@@ -70,6 +75,9 @@ function carouselAhead() {
     if (myIndex > x.length) {
         myIndex = 1;
     }
+
+    audios[myIndex - 1].play();
+    playImgs[myIndex - 1].src = "resources/images/pause.png";
 
     let behindButton = document.getElementById("behind");
     let aheadButton = document.getElementById("ahead");
@@ -113,7 +121,7 @@ let startTimer = function (duration, element) {
     }
 }
 
-function togglePlay(e) {
+  function togglePlay(e) {
     e = e || window.event;
     let btn = e.target;
     if (!audios[myIndex - 1].paused) {
@@ -134,7 +142,7 @@ function togglePlay(e) {
         let btn = e.target;
 
         if (!audios[myIndex - 1].paused) {
-            btn.classList.remove('active');
+            // btn.classList.remove('active');
             audios[myIndex - 1].pause();
             playImgs[myIndex - 1].src = "resources/images/play.png";
             isPlaying = false;
@@ -146,7 +154,7 @@ function togglePlay(e) {
         let btn = e.target;
 
         if (audios[myIndex - 1].paused) {
-            btn.classList.add('active');
+            // btn.classList.add('active');
             audios[myIndex - 1].play();
             playImgs[myIndex - 1].src = "resources/images/pause.png";
             isPlaying = true;
