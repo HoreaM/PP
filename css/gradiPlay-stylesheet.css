@@ -1,8 +1,11 @@
+body {
+    text-align: center;
+}
+
 .imgGradiPlay {
-    position: relative;
-    float: left;
-    width:  400px;
+    /*float: left;*/
     height: 400px;
+    width: 400px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
@@ -17,3 +20,28 @@
     border-radius: 10px;
 }
 
+.playImage {
+    /*position: relative;*/
+    width: 40px;
+    height: 40px;
+}
+
+.soundContainer:hover {
+    background-color: #ead79a;
+}
+
+.soundContainer {
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-radius: 10px;
+    background-color: #fde9af;
+    outline: none;
+}
+
+.slide-container {
+    margin: 70px;
+    text-align: center;
+}
