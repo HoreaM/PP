@@ -3,7 +3,7 @@ let isPlaying = false;
 
 function togglePlay() {
     if (isPlaying) {
-        myAudio.pause()
+        myAudio.pause();
         myAudio.currentTime = 0;
     } else {
         myAudio.play();
