@@ -182,6 +182,7 @@ function check(e) {
                     butoane[i].classList.add("disableWrong");
                     butoane[i].disabled = true;
 					butonAhead.disabled= false;
+					butonAhead.style.backgroundColor="#fbbbac";
                 }
             }
         } else {
