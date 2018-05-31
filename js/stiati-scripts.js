@@ -121,7 +121,7 @@ let startTimer = function (duration, element) {
     }
 }
 
-  function togglePlay(e) {
+function togglePlay(e) {
     e = e || window.event;
     let btn = e.target;
     if (!audios[myIndex - 1].paused) {

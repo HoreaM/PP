@@ -158,33 +158,33 @@ function togglePlay(e) {
 }
 
 function removeWrong() {
-    let images = document.getElementsByClassName("wrongBorder"); 
-        images[0].classList.remove('wrongBorder');
+    let images = document.getElementsByClassName("wrongBorder");
+    images[0].classList.remove('wrongBorder');
 }
 
 function hasClass(element, cls) {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
 }
 
-function check (e){
-	 e = e || window.event;
+function check(e) {
+    e = e || window.event;
     let buton = e.target;
-	let butonParent = buton.parentElement;
-	if(!hasClass(buton, "disableWrong")){
-	if (hasClass(buton, "correctButt") ){
-		buton.classList.add("correctBorder");
-		let butoane = document.getElementsByClassName("wrongButt");
-		for (let i=0; i<butoane.length ; i++){
-			if(butonParent == butoane[i].parentElement){
-			butoane[i].classList.add("disableWrong");
-			butoane[i].disabled = true;
-			}
-		}
-	} else {
-		buton.classList.add("wrongBorder");
-		 setTimeout(removeWrong, 2000);
-	}
-	}
+    let butonParent = buton.parentElement;
+    if (!hasClass(buton, "disableWrong")) {
+        if (hasClass(buton, "correctButt")) {
+            buton.classList.add("correctBorder");
+            let butoane = document.getElementsByClassName("wrongButt");
+            for (let i = 0; i < butoane.length; i++) {
+                if (butonParent == butoane[i].parentElement) {
+                    butoane[i].classList.add("disableWrong");
+                    butoane[i].disabled = true;
+                }
+            }
+        } else {
+            buton.classList.add("wrongBorder");
+            setTimeout(removeWrong, 2000);
+        }
+    }
 }
 
 

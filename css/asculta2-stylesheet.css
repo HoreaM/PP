@@ -1,0 +1,166 @@
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+
+/* Remove margins from "page content" on small screens */
+#main {
+    margin-left: 120px
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
+}
+
+/* Remove margins from "page content" on small screens */
+#mainLogin {
+}
+
+@media only screen and (max-width: 600px) {
+    #mainLogin {
+        margin-left: 0
+    }
+}
+
+.imgStyle {
+    width: 100% !important;
+}
+
+.style-smallDevicesMenu {
+    width: 20% !important;
+}
+
+/*img {*/
+/*height: 600px;*/
+/*}*/
+
+.align-elementTo-right {
+
+    display: inline-block;
+    margin-right: 10px;
+    float: right;
+}
+
+.align-relativelyTo {
+    display: inline-block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.imgLogo {
+    width: 992px;
+    height: 1108px;
+}
+
+.logOut {
+    text-align: right;
+    margin-left: 250px;
+}
+
+.logInBtn {
+    color: black;
+}
+
+.height-40 {
+    height: 40%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.distance_to_bottom {
+    padding-bottom: 20%;
+}
+
+.img-logo {
+    max-width: 15%;
+
+}
+
+.container {
+    width: 90%;
+    background: #ddd;
+    margin: 5%;
+
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.progress {
+    width: 1px;
+    height: 3px;
+    background: #006B5A;
+    transition: width .1s linear;
+}
+
+.mySlides {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+.imaginiAnimale {
+    height: 600px;
+}
+
+.togglePlay {
+    font: 0/0 a;
+    background: #006B5A;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 0;
+    width: 64px;
+    height: 64px;
+    /*border: 1px solid darken(#006B5A, 10%);*/
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 150ms ease-out;
+}
+
+.togglePlay:after {
+    box-sizing: border-box;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: 8px;
+    border: solid transparent;
+    border-top-width: 16px;
+    border-bottom-width: 16px;
+    border-left: 19px rgba(255, 255, 255, 0.9);
+}
+
+.togglePlay:hover {
+    transform: scale(1.05);
+}
+
+/*.togglePlay:after {*/
+/*width: 21px;*/
+/*height: 26px;*/
+/*margin-left: 0;*/
+/*border-width: 0 7px;*/
+/*border-color: rgba(255, 255, 255, 0.9);*/
+/*}*/
+
