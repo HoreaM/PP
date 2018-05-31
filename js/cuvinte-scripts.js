@@ -5,7 +5,6 @@ let playImgs = document.getElementsByClassName("playImage");
 
 let myIndex = 0;
 
-
 for (i = 0; i < audios.length; i++) {
     // console.log(audios[i]);
     audios[i].addEventListener("ended", toggleOnEnd);
@@ -102,6 +101,9 @@ function carouselAhead() {
     }
 
     x[myIndex - 1].style.display = "block";
+	let butonAhead = document.getElementById("ahead");
+	butonAhead.disabled = true;
+	butonAhead.style.backgroundColor="buttonface";
 }
 
 let startTimer = function (duration, element) {
@@ -170,6 +172,7 @@ function check(e) {
     e = e || window.event;
     let buton = e.target;
     let butonParent = buton.parentElement;
+	let butonAhead = document.getElementById("ahead");
     if (!hasClass(buton, "disableWrong")) {
         if (hasClass(buton, "correctButt")) {
             buton.classList.add("correctBorder");
@@ -178,6 +181,8 @@ function check(e) {
                 if (butonParent == butoane[i].parentElement) {
                     butoane[i].classList.add("disableWrong");
                     butoane[i].disabled = true;
+					butonAhead.disabled= false;
+					butonAhead.style.backgroundColor="#fbbbac";
                 }
             }
         } else {
