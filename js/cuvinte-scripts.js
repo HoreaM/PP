@@ -103,6 +103,7 @@ function carouselAhead() {
     x[myIndex - 1].style.display = "block";
 	let butonAhead = document.getElementById("ahead");
 	butonAhead.disabled = true;
+	butonAhead.style.backgroundColor="buttonface";
 }
 
 let startTimer = function (duration, element) {
