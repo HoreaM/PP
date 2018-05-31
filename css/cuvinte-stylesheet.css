@@ -1,9 +1,9 @@
 .container {
     /*position: absolute;*/
-    width: 70%;
-    height: 55%;
+    width: 80%;
+    height: 65%;
     margin-top: 40px;
-    margin-left: 15%;
+    /*margin-left: 15%;*/
     background-color: #b0c8e9;
     border-radius: 15px;
     /*overflow: scroll;*/
@@ -37,8 +37,21 @@
 .soundContainer {
     width: 100px;
     margin-top: 34%;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
     margin-left: 150px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    border-color: darkgray;
+    border-radius: 10px;
+    background-color: #fde9af;
+    outline: none;
+}
+
+.soundContainerFinal {
+    width: 100px;
+    margin-top: 34%;
+    margin-bottom: 30px;
     padding-top: 5px;
     padding-bottom: 10px;
     border-width: 2px;
@@ -150,7 +163,6 @@
     margin: 10px;
 }
 
-
 .wrongBorder {
     border: 5px solid red;
 }
@@ -159,8 +171,6 @@
     border: 5px solid green;
 }
 
-.disableWrong : disabled {
-	border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
+.container-final {
+    text-align: center;
 }

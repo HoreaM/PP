@@ -32,11 +32,12 @@
                 onmouseout="StopSound('desenat')"
         >Desenat
         </button>
-        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');" onclick="check()" onmouseover="PlaySound('colorat')"
+        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');" onmouseover="PlaySound('colorat')"
                 onmouseout="StopSound('colorat')"
         >Colorat
         </button>
-        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');" onmouseover="PlaySound('vargat')"
+        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');"
+                onmouseover="PlaySound('vargat')"
                 onmouseout="StopSound('vargat')"
         >Vărgat
         </button>
@@ -55,7 +56,8 @@
     <img class="animalImage" src="resources/images/zooImages/elephant.png">
     <h1 class="animalTitle">Elefantul este mare</h1>
     <p class="animalContent">
-        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');" onmouseover="PlaySound('gigant')"
+        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');"
+                onmouseover="PlaySound('gigant')"
                 onmouseout="StopSound('gigant')"
         >Gigant
         </button>
@@ -81,11 +83,13 @@
     <img class="animalImage" src="resources/images/zooImages/snake.png">
     <h1 class="animalTitle">Șarpele este șiret</h1>
     <p class="animalContent">
-        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');" onmouseover="PlaySound('prietenos')"
+        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');"
+                onmouseover="PlaySound('prietenos')"
                 onmouseout="StopSound('prietenos')"
         >Prietenos
         </button>
-        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');" onmouseover="PlaySound('viclean')"
+        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');"
+                onmouseover="PlaySound('viclean')"
                 onmouseout="StopSound('viclean')"
         >Viclean
         </button>
@@ -93,7 +97,8 @@
                 onmouseout="StopSound('lung')"
         >Lung
         </button>
-        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');" onmouseover="PlaySound('puternic')"
+        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');"
+                onmouseover="PlaySound('puternic')"
                 onmouseout="StopSound('puternic')"
         >Puternic
         </button>
@@ -107,7 +112,8 @@
     <img class="animalImage" src="resources/images/zooImages/lion.png">
     <h1 class="animalTitle">Leul este fioros</h1>
     <p class="animalContent">
-        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');" onmouseover="PlaySound('inspaimantator')"
+        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');"
+                onmouseover="PlaySound('inspaimantator')"
                 onmouseout="StopSound('inspaimantator')"
         >Înspăimântător
         </button>
@@ -115,7 +121,8 @@
                 onmouseout="StopSound('dragut')"
         >Drăguț
         </button>
-        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');" onmouseover="PlaySound('puternic')"
+        <button class="checkButton wrongButt" onclick="check(); PlaySound('gresit');"
+                onmouseover="PlaySound('puternic')"
                 onmouseout="StopSound('puternic')"
         >Puternic
         </button>
@@ -137,11 +144,13 @@
                 onmouseout="StopSound('murdara')"
         >Murdară
         </button>
-        <button id="wrongButt1" class="checkButton wrongButt" onclick="check(); PlaySound('gresit');" onmouseover="PlaySound('alba')"
+        <button id="wrongButt1" class="checkButton wrongButt" onclick="check(); PlaySound('gresit');"
+                onmouseover="PlaySound('alba')"
                 onmouseout="StopSound('alba')"
         >Albă
         </button>
-        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');" onmouseover="PlaySound('carliont')"
+        <button class="checkButton correctButt" onclick="check(); PlaySound('corect');"
+                onmouseover="PlaySound('carliont')"
                 onmouseout="StopSound('carliont')"
         >Cârlionțată
         </button>
@@ -156,9 +165,9 @@
     </button>
 </div>
 
-<div class="container">
-    <h1 class="animalTitle"><img class="fireworks" src="resources/images/fireworks.gif"> Felicitări!</h1>
-    <button class="soundContainer" onClick="togglePlay()">
+<div class="container container-final">
+    <h1 class="animalTitle"><img class="fireworks" src="resources/images/fireworks.gif">Felicitări!</h1>
+    <button class="soundContainerFinal" onClick="togglePlay()">
         <audio class="audio" src="resources/audio/castigat.mp4"></audio>
         <img class="playImage" src="resources/images/play.png">
     </button>
@@ -186,7 +195,6 @@
 <audio id='pictat'
        src='resources/audio/tigru-pictat.mp4'>
 </audio>
-
 <audio id='gigant'
        src='resources/audio/elefantul-gigant.mp4'>
 </audio>
@@ -199,7 +207,6 @@
 <audio id='gras'
        src='resources/audio/elefantul-gras.mp4'>
 </audio>
-
 <audio id='prietenos'
        src='resources/audio/sarpe-prietenos.mp4'>
 </audio>
@@ -212,7 +219,6 @@
 <audio id='puternic'
        src='resources/audio/sarpe-puternic.mp4'>
 </audio>
-
 <audio id='inspaimantator'
        src='resources/audio/leu-inspaimantator.mp4'>
 </audio>
@@ -222,8 +228,6 @@
 <audio id='fricos'
        src='resources/audio/leu-fricos.mp4'>
 </audio>
-
-
 <audio id='murdara'
        src='resources/audio/oaia-murdara.mp4'>
 </audio>
@@ -240,7 +244,7 @@
        src='resources/audio/corect.mp4'>
 </audio>
 <audio id='gresit'
-        src='resources/audio/gresit.mp4'>
+       src='resources/audio/gresit.mp4'>
 </audio>
 <script src="js/cuvinte-scripts.js"></script>
 <script src="js/audio-hover.js"></script>
