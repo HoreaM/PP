@@ -149,3 +149,18 @@
     height: 50px;
     margin: 10px;
 }
+
+
+.wrongBorder {
+    border: 5px solid red;
+}
+
+.correctBorder {
+    border: 5px solid green;
+}
+
+.disableWrong : disabled {
+	border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
