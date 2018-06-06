@@ -1,13 +1,16 @@
 let timer;
 let percent = 0;
+
 let audios = document.getElementsByClassName("audio");
 let playImgs = document.getElementsByClassName("playImage");
 
+let behindButton = document.getElementById("behind");
+let aheadButton = document.getElementById("ahead");
+let startAgainButton = document.getElementById("startAgain");
+
 let myIndex = 0;
 
-
 for (i = 0; i < audios.length; i++) {
-    // console.log(audios[i]);
     audios[i].addEventListener("ended", toggleOnEnd);
 }
 
@@ -15,6 +18,16 @@ carouselAhead();
 
 function toggleOnEnd() {
     playImgs[myIndex - 1].src = "resources/images/play.png";
+
+    if (myIndex === x.length) {
+        startAgainButton.style.display = "block";
+        behindButton.style.display = "block";
+    } else if (myIndex === 1) {
+        aheadButton.style.display = "block";
+    } else {
+        aheadButton.style.display = "block";
+        behindButton.style.display = "block";
+    }
 }
 
 function carouselBehind() {
@@ -37,22 +50,9 @@ function carouselBehind() {
     audios[myIndex - 1].play();
     playImgs[myIndex - 1].src = "resources/images/pause.png";
 
-    let behindButton = document.getElementById("behind");
-    let aheadButton = document.getElementById("ahead");
-    // let goToMenuButton = document.getElementById("goToMenu");
-    let startAgainButton = document.getElementById("startAgain");
-
-    if (myIndex === 1) {
-        behindButton.style.display = "none";
-    } else {
-        behindButton.style.display = "block";
-    }
-
-    if (myIndex !== x.length) {
-        aheadButton.style.display = "block";
-        // goToMenuButton.style.display = "none";
-        startAgainButton.style.display = "none";
-    }
+    behindButton.style.display = "none";
+    aheadButton.style.display = "none";
+    startAgainButton.style.display = "none";
 
     x[myIndex - 1].style.display = "block";
 }
@@ -79,39 +79,12 @@ function carouselAhead() {
     audios[myIndex - 1].play();
     playImgs[myIndex - 1].src = "resources/images/pause.png";
 
-    let behindButton = document.getElementById("behind");
-    let aheadButton = document.getElementById("ahead");
-    // let goToMenuButton = document.getElementById("goToMenu");
-    let startAgainButton = document.getElementById("startAgain");
-
-    if (myIndex === x.length) {
-        // goToMenuButton.style.display = "block";
-        startAgainButton.style.display = "block";
-        aheadButton.style.display = "none";
-        behindButton.style.display = "block";
-    } else if (myIndex === 1) {
-        // goToMenuButton.style.display = "none";
-        startAgainButton.style.display = "none";
-        aheadButton.style.display = "block";
-        behindButton.style.display = "none";
-    } else {
-        // goToMenuButton.style.display = "none";
-        startAgainButton.style.display = "none";
-        aheadButton.style.display = "block";
-        behindButton.style.display = "block";
-    }
+    behindButton.style.display = "none";
+    aheadButton.style.display = "none";
+    startAgainButton.style.display = "none";
 
     x[myIndex - 1].style.display = "block";
 }
-
-// audio.addEventListener("playing", function (_event) {
-//     let duration = _event.target.duration;
-//     advance(duration, audio);
-// });
-//
-// audio.addEventListener("pause", function (_event) {
-//     clearTimeout(timer);
-// });
 
 let startTimer = function (duration, element) {
     if (percent < 100) {

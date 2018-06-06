@@ -4,7 +4,7 @@
     height: 55%;
     margin-top: 40px;
     margin-left: 15%;
-    background-color: #b0c8e9;
+    background-color: #8698e0;
     border-radius: 15px;
     /*overflow: scroll;*/
 }
@@ -48,19 +48,6 @@
     outline: none;
 }
 
-.menuRef {
-    position: absolute;
-    width: 10%;
-    height: 15%;
-    left: 87%;
-    margin-top: 8%;
-    border-radius: 10px;
-    outline: 0;
-    background-color: #fbbbac;
-    border-width: 3px;
-    border-color: darkgray;
-}
-
 .startAgain {
     position: absolute;
     width: 10%;
@@ -69,7 +56,7 @@
     margin-top: 13%;
     border-radius: 10px;
     outline: 0;
-    background-color: #fbbbac;
+    background-color: #3cc429;
     border-width: 3px;
     border-color: darkgray;
 }
@@ -82,7 +69,7 @@
     margin-top: 13%;
     border-radius: 10px;
     outline: 0;
-    background-color: #fbbbac;
+    background-color: #3cc429;
     border-width: 3px;
     border-color: darkgray;
 }
@@ -95,7 +82,7 @@
     margin-top: 13%;
     border-radius: 10px;
     outline: 0;
-    background-color: #fbbbac;
+    background-color: #3cc429;
     border-width: 3px;
     border-color: darkgray;
 }
@@ -125,19 +112,15 @@
 }
 
 .navigateBehind:hover {
-    background-color: #efa292;
+    background-color: #56b149;
 }
 
 .navigateAhead:hover {
-    background-color: #efa292
-}
-
-.menuRef:hover {
-    background-color: #efa292;
+    background-color: #56b149
 }
 
 .startAgain:hover {
-    background-color: #efa292;
+    background-color: #56b149;
 }
 
 .soundContainer:hover {
