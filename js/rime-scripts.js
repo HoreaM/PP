@@ -136,3 +136,11 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+
+
+let randRima = $(".randRima");
+for(let i = 0; i < randRima.length; i++){
+    let target = Math.floor(Math.random() * randRima.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randRima.length -1) +1;
+    randRima.eq(target).before(randRima.eq(target2));
+}
