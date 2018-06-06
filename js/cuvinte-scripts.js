@@ -5,6 +5,13 @@ let playImgs = document.getElementsByClassName("playImage");
 
 let myIndex = 0;
 
+let randRima = $(".cuvinteAnimal");
+for(let i = 0; i < randRima.length; i++){
+    let target = Math.floor(Math.random() * randRima.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randRima.length -1) +1;
+    randRima.eq(target).before(randRima.eq(target2));
+}
+
 for (i = 0; i < audios.length; i++) {
     // console.log(audios[i]);
     audios[i].addEventListener("ended", toggleOnEnd);
@@ -191,6 +198,3 @@ function check(e) {
         }
     }
 }
-
-
-
