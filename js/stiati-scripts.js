@@ -7,6 +7,7 @@ let playImgs = document.getElementsByClassName("playImage");
 let behindButton = document.getElementById("behind");
 let aheadButton = document.getElementById("ahead");
 let startAgainButton = document.getElementById("startAgain");
+let x = document.getElementsByClassName("container");
 
 let myIndex = 0;
 
@@ -35,7 +36,6 @@ function carouselBehind() {
     audios[myIndex - 1].currentTime = 0;
     toggleOnEnd();
     let i;
-    let x = document.getElementsByClassName("container");
 
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -65,7 +65,6 @@ function carouselAhead() {
     }
 
     let i;
-    let x = document.getElementsByClassName("container");
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
