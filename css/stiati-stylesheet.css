@@ -123,6 +123,27 @@
     background-color: #56b149;
 }
 
+.navigateBehind:focus {
+  outline: none;
+}
+
+.navigateAhead:focus {
+  outline: none;
+}
+
+.menuButton:focus {
+  outline: none;
+}
+
+.startAgain:focus {
+  outline: : none;
+}
+
 .soundContainer:hover {
     background-color: #ead79a;
+    outline: none;
+}
+
+.soundContainer:focus {
+  outline: none;
 }

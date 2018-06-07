@@ -7,6 +7,7 @@ let playImgs = document.getElementsByClassName("playImage");
 let behindButton = document.getElementById("behind");
 let aheadButton = document.getElementById("ahead");
 let startAgainButton = document.getElementById("startAgain");
+let menuButton = document.getElementById("menuButton");
 let x = document.getElementsByClassName("container");
 
 let myIndex = 0;
@@ -19,6 +20,8 @@ carouselAhead();
 
 function toggleOnEnd() {
     playImgs[myIndex - 1].src = "resources/images/play.png";
+
+    menuButton.style.display = "block";
 
     if (myIndex === x.length) {
         startAgainButton.style.display = "block";
@@ -50,6 +53,7 @@ function carouselBehind() {
     audios[myIndex - 1].play();
     playImgs[myIndex - 1].src = "resources/images/pause.png";
 
+    menuButton.style.display = "none";
     behindButton.style.display = "none";
     aheadButton.style.display = "none";
     startAgainButton.style.display = "none";
@@ -78,6 +82,7 @@ function carouselAhead() {
     audios[myIndex - 1].play();
     playImgs[myIndex - 1].src = "resources/images/pause.png";
 
+    menuButton.style.display = "none";
     behindButton.style.display = "none";
     aheadButton.style.display = "none";
     startAgainButton.style.display = "none";
