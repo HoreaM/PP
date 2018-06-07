@@ -219,7 +219,7 @@ function check(e) {
             buton.classList.add("correctBorder");
             let butoane = document.getElementsByClassName("wrongButt");
             for (let i = 0; i < butoane.length; i++) {
-                if (butonParent == butoane[i].parentElement) {
+                if (butonParent === butoane[i].parentElement) {
                     butoane[i].classList.add("disableWrong");
                     butoane[i].disabled = true;
 					butonAhead.disabled= false;
