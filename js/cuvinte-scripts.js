@@ -12,6 +12,40 @@ for(let i = 0; i < randRima.length; i++){
     randRima.eq(target).before(randRima.eq(target2));
 }
 
+let randOpt1 = $(".opt1");
+for(let i = 0; i < randOpt1.length; i++){
+    let target = Math.floor(Math.random() * randOpt1.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randOpt1.length -1) +1;
+    randOpt1.eq(target).before(randOpt1.eq(target2));
+}
+
+let randOpt2 = $(".opt2");
+for(let i = 0; i < randOpt2.length; i++){
+    let target = Math.floor(Math.random() * randOpt2.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randOpt2.length -1) +1;
+    randOpt2.eq(target).before(randOpt2.eq(target2));
+}
+
+let randOpt3 = $(".opt3");
+for(let i = 0; i < randOpt3.length; i++){
+    let target = Math.floor(Math.random() * randOpt3.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randOpt3.length -1) +1;
+    randOpt3.eq(target).before(randOpt3.eq(target2));
+}
+
+let randOpt4 = $(".opt4");
+for(let i = 0; i < randOpt4.length; i++){
+    let target = Math.floor(Math.random() * randOpt4.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randOpt4.length -1) +1;
+    randOpt4.eq(target).before(randOpt4.eq(target2));
+}
+
+let randOpt5 = $(".opt5");
+for(let i = 0; i < randOpt5.length; i++){
+    let target = Math.floor(Math.random() * randOpt5.length -1) + 1;
+    let target2 = Math.floor(Math.random() * randOpt5.length -1) +1;
+    randOpt5.eq(target).before(randOpt5.eq(target2));
+}
 for (i = 0; i < audios.length; i++) {
     // console.log(audios[i]);
     audios[i].addEventListener("ended", toggleOnEnd);
