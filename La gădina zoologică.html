@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>ZooApp</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/basic-stylesheet.css">
+    <link rel="stylesheet" href="css/asculta-stylesheet.css">
+</head>
+
+<body>
+
+<div id="logo-container">
+    <img class="logo" src="resources/images/zooapp.png">
+</div>
+
+<div class="slide-container">
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/zoo_asculta.jpg">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/tiger.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/giraffe.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/leopard.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/wolf.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/lion.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/snake.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/ostrich.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/crocodile.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/elephant.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/camel.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/kangaroo.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/sheep.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/polarBear.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/rhino.png">
+    </div>
+    <div class="mySlides ">
+        <img class="imgGradiPlay" src="resources/images/zooImages/dromader.png">
+    </div>
+</div>
+
+<button class="soundContainer" onClick="togglePlay()">
+    <audio class="audio" src="resources/audio/povestea.mp4"></audio>
+    <img class="playImage" src="resources/images/play.png">
+</button>
+
+<div class="inapoi">
+    <button onclick="location.href='menu.html'" type="button" class="btn btn-primary buton"
+            onmouseover="PlaySound( 'inapoi') "
+            onmouseout="StopSound( 'inapoi') ">
+        <img class="imagine" src="resources/images/inapoi.png">
+        Înapoi La Meniu
+    </button>
+    <audio id='inapoi'
+           src='resources/audio/inapoi-la-meniu.mp4'>
+    </audio>
+</div>
+
+
+<!--
+<div class="container" >
+    <div class="progress" id="progress"></div>
+    <audio id="audio" src="https://www.freesound.org/data/previews/338/338825_1648170-lq.mp3"></audio>
+    <button class="togglePlay" onClick="togglePlay()">Play/Pause</button>
+</div>
+-->
+
+<script src="js/audio-hover.js"></script>
+<script src="js/carousel-imagini.js"></script>
+<script src="js/asculta-scripts.js"></script>
+
+<!--
+<script type="text/javascript">
+    var timer;
+    var percent = 0;
+    var audio = document.getElementById("audio");
+
+    audio.addEventListener("playing", function (_event) {
+        var duration = _event.target.duration;
+        advance(duration, audio);
+    });
+
+    audio.addEventListener("pause", function (_event) {
+        clearTimeout(timer);
+    });
+
+    var advance = function (duration, element) {
+        var progress = document.getElementById("progress");
+        increment = 10 / duration
+        percent = Math.min(increment * element.currentTime * 10, 100);
+        progress.style.width = percent + '%'
+        startTimer(duration, element);
+    }
+
+    var startTimer = function (duration, element) {
+        if (percent < 100) {
+            timer = setTimeout(function () {
+                advance(duration, element)
+            }, 100);
+        }
+    }
+
+    function togglePlay(e) {
+        e = e || window.event;
+        var btn = e.target;
+
+        if (!audio.paused) {
+            btn.classList.remove('active');
+            audio.pause();
+            isPlaying = false;
+
+        } else {
+            btn.classList.add('active');
+            audio.play();
+            isPlaying = true;
+        }
+    }
+
+</script>
+-->
+
+</body>
+</html>
